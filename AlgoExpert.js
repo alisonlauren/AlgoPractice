@@ -47,5 +47,43 @@ function isValidSubsequence(array, sequence) {
     return seqIdx === sequence.length;
 }
 
+// FIND CLOSEST VALUE IN BINARY SEARCH TREE
+//3. Write a function that takes in a Binary Search Tree and a target integer value and
+//returns the closest value to that target balue contained in the Binary Search Tree.
+
+
+//helper method
+function findClosestValueInBst(tree, target) {
+    //keep track of closest variable, help implement recursively
+    return findClosestValueInBstHelper(tree, target, tree.value)
+}
+
+function findClosestValueInBstHelper(tree, target, closest) {
+    //nothing on the tree? just return closest you got!
+    if (tree === null) return closest;
+    //absolute value of diff of target and closest node
+    // if our target value if further than closest than the current value
+    //then set new value
+    if (Math.abs(target - closest) > Math.abs(target - tree.value)) {
+        closest = tree.value
+    }
+    if (target < tree.value) {
+        return findClosestValueInBstHelper(tree.left, target, closest)
+    } else if (target > tree.value) {
+        return findClosestValueInBstHelper(tree.right, target, closest)
+    } else {
+        return closest;
+    }
+}
+// This is the class of the input tree. Do not edit.
+class BST {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+
 
 
