@@ -26,5 +26,26 @@ function twoNumberSum(array, targetSum) {
     return [];
 }
 
-//2. 
+// VALIDATE SUBSEQUENCE
+//2. Given two non-empty arrays of integers, write a function that determines whether the second
+//array is a subsequence of the first one. A subsequence of an array is a set of numbers that aren't
+//necessarily adjacent in the array but are the same order as they appear in the array. For instance,
+//the numbers [1,3,4] from a subsequence of the array [1,2,3,4], and so do the numbers [2,4].
+
+function isValidSubsequence(array, sequence) {
+    //acting as the pointer, looking through the array
+    let seqIdx = 0;
+    for (const value of array) {
+        // if the index it is currently at matches the length,
+        //then there's nothing else to look for, so just break
+        if (seqIdx === sequence.length) break;
+        // if our sequence at the seqidx is so far equal to our value, continue
+        //looping through the array
+        if (sequence[seqIdx] === value) seqIdx++;
+    }
+    // return
+    return seqIdx === sequence.length;
+}
+
+
 
