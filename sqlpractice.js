@@ -209,6 +209,17 @@
 //   FROM EmployeeInfo WHERE
 //   EmpID <= (SELECT COUNT(EmpID)/2 from EmployeeInfo);
 
+//VIEWS: logical snap shot based on table, used for restricting access
+//making complex queries simplier
+
+//Collation: Set of rules determines how data can be stored
+//Collation Sensitivity: case, width, accent
+
+//Datawarehouse: central repo of data where data is assembled from multiple sources
+
+
+
+
 
 
 

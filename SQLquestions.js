@@ -1,5 +1,9 @@
 //TOP SQL interview questions
 
+
+//0. case manipulation: upper, lower, initcap
+
+
 //1. Tell me about yourself and why you want this position
 // I am a reliable team player who you can rely on to always bring
 //professionalism and passion into my career. I am goal oriented and will ensure
@@ -105,5 +109,54 @@
 // "HAVING" underneath the group by;
 
 
-// SELECT COUNT(*) from table
+//21. Data Integrity, Accuracy, Consistency, Integrety con, 
+
+//22. Clustered Index:
+// easy retreival faster DB
+// alters the way records are stored sorts out rows by column
+
+// NonClustered Index: 
+//retrieval from database is slower
+// does not alter the way data is stored
+
+//23. Denormalization:
+// Increase performance of entire DB, introduces redundancy 
+// data from various tables into a single table
+
+//24. Normalization: organize data to avoid duplication
+// better DB organization
+// more tables smaller rows
+//types: inf, 2nf, 3nf, bcnf
+//1nf, make sure tables have only a single value
+//2nf, single column primary keys
+//3nf, no transitive functional dependencies
 //
+
+
+//25. Index: 
+//Performance tuning method
+//faster retrieval of records
+//creates entry for each value
+//types: unique, Clustered, nonclustered
+
+//26. ACID: ATOMICITY, CONSISTENCY, ISOLATION, DURABILITY
+
+//27. WHAT IS THE NEED FOR GROUP FUNCTIONS? RETURNS ONE RESULT
+// AVG, COUNT, MAX, MIN, SUM
+
+//28. CLAUSE: ways to filter, WHERE/HAVING
+
+//29. Dynamic SQL executd, using exec, query with param, useing sp_executresql
+
+//30. levels of constraint: column and table.
+
+//31. FETCH COMMON RECORDS FOR TWO TABLES: INTERSECT
+
+//32. SET OPERATORS: UNION, INTERSECT
+
+//33. DIFF FROM AGG TO SCALAR FUNC: SCALAR RETURN SINGLE VALUE BASED ON
+// INPUT VALUE, SUCH AS UCASE, NOW
+
+//34. 
+
+
