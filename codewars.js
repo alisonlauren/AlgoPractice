@@ -9,3 +9,16 @@ function array_diff(a, b) {
 
 console.log(array_diff(a,b))
 
+function array_diff(c,d) {
+    return c.filter(e => !d.includes(e));
+}
+c = [1, 2, 3, 4, 5, 6]
+d = [5,6]
+console.log(array_diff(c,d))
+
+function array_diff(a,b) {
+    return a.filter(e => !b.includes(e))
+}
+console.log(array_diff(a,b))
+
+
