@@ -106,7 +106,10 @@ function productSum(array, multiplier = 1) {
 // contained in the array and should return its indec if it is, otherwise -1.
 
 
-
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
 
 
 
