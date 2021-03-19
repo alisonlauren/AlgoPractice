@@ -9,6 +9,10 @@ for part in question_parts:
             print("wow ok, text is sent")
         elif user_choice == "N":
             print("good choice, text deleted")
+for part in question_parts:
+    if part.lower() not in bad_words:
+        print("Great text!")
+
 
     
         
