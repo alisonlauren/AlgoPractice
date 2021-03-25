@@ -1,5 +1,5 @@
 
-bad_words = ["mean", "ugly" "I hate", "bad", "wrong", "cry"]
+bad_words = ["mean", "ugly" "I hate", "bad", "wrong", "cry", "worse"]
 user_input = input("Send a Text? ")
 question_parts = user_input.split(" ")
 for part in question_parts:
