@@ -10,6 +10,7 @@ function nonConstructibleChange(coins) {
 }
 
 let myCoins = [1,2,5]
+let myothaCoins = [3,4,5,6,7]
 
 function nonConstructibleChange(coins) {
     coins.sort((a, b) => a - b);
@@ -22,3 +23,4 @@ function nonConstructibleChange(coins) {
 }
 
 console.log(nonConstructibleChange(myCoins))
+console.log(nonConstructibleChange(myothaCoins))
