@@ -1,4 +1,5 @@
 let waitTime = [5,6,7,1,2,33]
+let secondWaitTime = [6,7,8,1,66,7]
 
 function minimumWaitingTime(queries) {
     queries.sort((a, b) => a - b)
@@ -13,4 +14,5 @@ function minimumWaitingTime(queries) {
 }
 
 console.log(minimumWaitingTime(waitTime))
+console.log(minimumWaitingTime(secondWaitTime))
 
